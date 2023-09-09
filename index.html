@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head> 
-     <title>Calculadora Basal</title>
-    </head>
-    <body>
-        <h1> Hidratacion Basal</h1> 
-        <input type="number" placeholder="peso en kg"/>
-        <button>calcular</button>
-        <p>71cc/h <p>
-            <p>m+m/2: 105cc/h <p>
-                <div>
-        <h1>¿Como se calcula?</h1>
-        <ul>
-            <li>De okg a 10kg, se calcula 100ccpor cada kilo.<li>
-            <li> Se suma por cada kilo de peso por arriba de 10kg, hasta 20kg <li>
-            <li> De 20kg para arriba,se suma 20ccpor cada kilo adicional <li>
+          <link rel="stylesheet" href="./style.css"/>
+          <script src="script.js" defer> </script>
+        </head> 
+        <body> 
+          <div id="contenedor">
+            <div id="calculadora">
+            <div class="contenido">
+                <h1>Hidratación Basal</h1>
+                <p class="item">Completa todos los datos</p> 
+        <input class="item" id="peso" type="number" placeholder="Peso en kg" />
+        <p class="item" id="error">* Debe completar todos los datos</p>
+        <button class="item" id="calcular">Calcular</button>
+        <p class="item resultado" id="flu">71 cc/h</p>
+        <p class="item resultado" id="man"> m+m/2 : 105cc/h</p>
+            </div>
+        </div>
+        <div id="detalle">
+            <div id="seccion" class="contenido">
+                <h1>¿Cómo se calcula?</h1>
+                <ul>
+            <li>De okg a 10kg, se calcula 100ccpor cada kilo. </li>
+            <li> Se suma por cada kilo de peso por arriba de 10kg, hasta 20kg </li>
+            <li> De 20kg para arriba,se suma 20ccpor cada kilo adicional </li>
         </ul>
-     </div>
-     <dy>
+         </div>
+      </div>
+    </body>
+</html>
 
      
 
